@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5vg5ymahnu1"]
+
+[ext_resource type="Script" path="res://Decebalus.gd" id="1_1b0rk"]
+[ext_resource type="Texture2D" uid="uid://dylfv7g666gek" path="res://mainCharacter.png" id="1_kyhbh"]
+[ext_resource type="PackedScene" uid="uid://b4cmrwpbbujjd" path="res://lvl_1_gun.tscn" id="3_ps2cy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nq7w0"]
+radius = 6.0
+
+[node name="Decebalus" type="CharacterBody2D"]
+script = ExtResource("1_1b0rk")
+
+[node name="MainCharacter" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+scale = Vector2(0.0975, 0.0975)
+texture = ExtResource("1_kyhbh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_nq7w0")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Lvl1Gun" parent="." instance=ExtResource("3_ps2cy")]
+position = Vector2(0, -8)

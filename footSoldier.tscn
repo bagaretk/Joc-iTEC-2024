@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://q0uaefvqoo2"]
+
+[ext_resource type="Texture2D" uid="uid://c6tavro8gwe66" path="res://footSoldier.png" id="1_cjnsa"]
+[ext_resource type="Script" path="res://geth.gd" id="1_hxwtu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a12xg"]
+size = Vector2(201, 200)
+
+[node name="Geth" type="CharacterBody2D"]
+collision_layer = 2
+script = ExtResource("1_hxwtu")
+
+[node name="Geth" type="Sprite2D" parent="."]
+position = Vector2(0, -74)
+texture = ExtResource("1_cjnsa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -74)
+shape = SubResource("RectangleShape2D_a12xg")

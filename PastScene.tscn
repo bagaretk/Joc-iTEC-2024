@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://stedvjqoaoyj"]
+
+[ext_resource type="Texture2D" uid="uid://benkrwvc1lkqd" path="res://fundalTrecut.png" id="1_5sc8n"]
+[ext_resource type="PackedScene" uid="uid://c5vg5ymahnu1" path="res://Decebalus.tscn" id="2_mgb0s"]
+[ext_resource type="PackedScene" uid="uid://q0uaefvqoo2" path="res://footSoldier.tscn" id="2_ymsas"]
+
+[node name="Timeline" type="Node2D"]
+
+[node name="PastScene" type="Node2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="PastScene"]
+layer = -1
+
+[node name="FundalTrecut" type="Sprite2D" parent="PastScene/CanvasLayer"]
+modulate = Color(0.682353, 0.682353, 0.682353, 1)
+position = Vector2(577, 330)
+scale = Vector2(5.97, 3.46)
+texture = ExtResource("1_5sc8n")
+
+[node name="Footsoldier" parent="PastScene" instance=ExtResource("2_ymsas")]
+position = Vector2(356, 198)
+
+[node name="Decebalus" parent="PastScene" instance=ExtResource("2_mgb0s")]
+position = Vector2(100, 148)
