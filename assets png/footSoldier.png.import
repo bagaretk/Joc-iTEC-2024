@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1ifo06emkgv2"
-path="res://.godot/imported/laser-albastru.png-899f775abcd75b2a74efcd206cbb9978.ctex"
+uid="uid://ca6r16el4v0r7"
+path="res://.godot/imported/footSoldier.png-86371474a9d753d5a7968035c5b7579f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://laser-albastru.png"
-dest_files=["res://.godot/imported/laser-albastru.png-899f775abcd75b2a74efcd206cbb9978.ctex"]
+source_file="res://assets png/footSoldier.png"
+dest_files=["res://.godot/imported/footSoldier.png-86371474a9d753d5a7968035c5b7579f.ctex"]
 
 [params]
 

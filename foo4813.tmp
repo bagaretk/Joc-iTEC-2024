@@ -1,21 +1,20 @@
 [gd_scene load_steps=4 format=3 uid="uid://q0uaefvqoo2"]
 
+[ext_resource type="Texture2D" path="res://footSoldier.png" id="1_cjnsa"]
 [ext_resource type="Script" path="res://geth.gd" id="1_hxwtu"]
-[ext_resource type="Texture2D" uid="uid://ca6r16el4v0r7" path="res://assets png/footSoldier.png" id="2_dc1aa"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a12xg"]
 size = Vector2(95.5, 94)
 
-[node name="FootSoldier2" type="CharacterBody2D"]
+[node name="FootSoldier" type="CharacterBody2D"]
 collision_layer = 2
 collision_mask = 3
 script = ExtResource("1_hxwtu")
 
 [node name="FootSoldier" type="Sprite2D" parent="."]
-unique_name_in_owner = true
 position = Vector2(1, -19)
 scale = Vector2(0.45, 0.45)
-texture = ExtResource("2_dc1aa")
+texture = ExtResource("1_cjnsa")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -20)

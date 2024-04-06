@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://benkrwvc1lkqd"
-path="res://.godot/imported/fundalTrecut.png-ef9d4d2b4260453e83efc0fc9a6913ba.ctex"
+uid="uid://b1v5fa048sdfa"
+path="res://.godot/imported/pistol.png-385ba6ede1a23f6adfa477703598099d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fundalTrecut.png"
-dest_files=["res://.godot/imported/fundalTrecut.png-ef9d4d2b4260453e83efc0fc9a6913ba.ctex"]
+source_file="res://assets png/pistol.png"
+dest_files=["res://.godot/imported/pistol.png-385ba6ede1a23f6adfa477703598099d.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dylfv7g666gek"
-path="res://.godot/imported/mainCharacter.png-a673e092d5758877f951628ac4deb584.ctex"
+uid="uid://bcfxsywe786yb"
+path="res://.godot/imported/laser-albastru.png-665ce731f5bfa461b069b075f7df3740.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mainCharacter.png"
-dest_files=["res://.godot/imported/mainCharacter.png-a673e092d5758877f951628ac4deb584.ctex"]
+source_file="res://assets png/laser-albastru.png"
+dest_files=["res://.godot/imported/laser-albastru.png-665ce731f5bfa461b069b075f7df3740.ctex"]
 
 [params]
 

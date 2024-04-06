@@ -1,0 +1,68 @@
+[gd_scene load_steps=4 format=3 uid="uid://bukmkf5qq7ptf"]
+
+[ext_resource type="Texture2D" path="res://fundalTrecut.png" id="1_w0kix"]
+[ext_resource type="PackedScene" uid="uid://c5vg5ymahnu1" path="res://Decebalus.tscn" id="2_ain7u"]
+
+[sub_resource type="Curve2D" id="Curve2D_l1wjs"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -233.61, -174.369, 0, 0, 0, 0, 1481.43, -171.49, 0, 0, 0, 0, 1479.69, 927.649, 0, 0, 0, 0, -237.956, 927.649, 0, 0, 0, 0, -233.61, -174.369)
+}
+point_count = 5
+
+[node name="FutureScene" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="FundalTrecut" type="Sprite2D" parent="CanvasLayer"]
+modulate = Color(0.937255, 0.45098, 1, 1)
+position = Vector2(577, 330)
+scale = Vector2(5.97, 3.46)
+texture = ExtResource("1_w0kix")
+
+[node name="Decebalus" parent="." instance=ExtResource("2_ain7u")]
+position = Vector2(178, 165)
+
+[node name="Path2D" type="Path2D" parent="Decebalus"]
+position = Vector2(-321.254, -227.355)
+scale = Vector2(1.15041, 1.04172)
+curve = SubResource("Curve2D_l1wjs")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Decebalus/Path2D"]
+unique_name_in_owner = true
+position = Vector2(-233.61, -174.369)
+rotation = 0.00167917
+
+[node name="TimerSpawnMobs" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[node name="GameOver" type="CanvasLayer" parent="."]
+unique_name_in_owner = true
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="GameOver"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.698039)
+
+[node name="Label" type="Label" parent="GameOver/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.5
+offset_top = -11.5
+offset_right = 43.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 120
+text = "Game Over"
+horizontal_alignment = 1
+vertical_alignment = 1

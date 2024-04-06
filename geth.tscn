@@ -1,6 +1,5 @@
-[gd_scene load_steps=4 format=3 uid="uid://c1mrvqxkvajyy"]
+[gd_scene load_steps=3 format=3 uid="uid://c1mrvqxkvajyy"]
 
-[ext_resource type="Texture2D" path="res://geth.png" id="1_cjnsa"]
 [ext_resource type="Script" path="res://geth.gd" id="1_hxwtu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kgy86"]
@@ -10,8 +9,8 @@ size = Vector2(202, 200)
 script = ExtResource("1_hxwtu")
 
 [node name="FootSoldier" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(0, -74)
-texture = ExtResource("1_cjnsa")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -73)
